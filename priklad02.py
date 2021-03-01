@@ -7,13 +7,15 @@ sklad = {
 }
 a = input('Zadejte kód součástky:')
 if a in sklad:
-  b = str(input('Zadejte množství :'))
-  if b > str(sklad.get(a)):
+  b = int(input('Zadejte množství :'))
+  if b > int(sklad.get(a)):
        print('Lze prodat pouze ' + str(sklad[a]) +' kusů.')
        del sklad[a]
+        print(sklad)
   else:
     print('Poptávku lze uspokojit v plné výši')
-    c = str(sklad.get(a))-b
+    c = int(sklad.get(a))-b
     sklad[a]=c
+    print(sklad)
 else:
   print('Součástka není skladem.')
