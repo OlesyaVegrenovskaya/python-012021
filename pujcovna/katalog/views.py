@@ -5,7 +5,7 @@ from django.views import View
 
 class IndexView(View):
     def get(self, request):
-        return HttpResponse("Zde bude titulní stránka.")
+        return HttpResponse("<a href='http://localhost:8000/katalog/seznam/'>Katalog</a>")
 
 
 class SeznamView(View):
