@@ -17,3 +17,10 @@ class Uchacez(Kontakt):
         else:
             self.zapis_z_pohovoru = zapis
             return f"Zápis z pohovoru byl uložen."
+
+pohovor1 = Uchacez("Olesya Vegrenovskaya", "veg@seznam.cz", "21. 5. 2021")
+pohovor2 = Uchacez("Dominik Burdenkov", "domca@seznam.cz", "01. 03. 2021")
+
+print(pohovor1.uloz_zapis("xxxxxxx"))
+print(pohovor2.uloz_zapis("xxxxxxxx"))
+
